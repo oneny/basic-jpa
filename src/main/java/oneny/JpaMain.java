@@ -15,20 +15,6 @@ public class JpaMain {
     tx.begin();
 
     try {
-    /*
-      // 회원 등록
-      Member member = new Member();
-
-      member.setId(1L);
-      member.setName("oneny");
-
-      em.persist(member);
-    */
-      Member findMember = em.find(Member.class, 1L);
-      System.out.println("findMember.getId() = " + findMember.getId());
-      System.out.println("findMember.getName() = " + findMember.getName());
-
-      findMember.setName("twony");
 
       tx.commit();
     } catch (Exception e) {
