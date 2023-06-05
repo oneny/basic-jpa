@@ -1,5 +1,7 @@
 package oneny;
 
+import oneny.domain.Book;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -15,6 +17,11 @@ public class JpaMain {
     tx.begin();
 
     try {
+      Book book = new Book();
+      book.setAuthor("oneny");
+      book.setIsbn("abc");
+
+      em.persist(book);
 
       tx.commit();
     } catch (Exception e) {
