@@ -5,8 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "ADDRESS")
+//@Entity
+//@Table(name = "ADDRESS")
 public class AddressEntity {
 
   public AddressEntity() {
